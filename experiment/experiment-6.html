@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShopEasy</title>
+   
+
+<style>
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #f4f4f9;
+}
+
+header {
+    background: #222;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    color: white;
+    font-size: 28px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.card {
+    width: 330px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+}
+
+.card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    background: #eee;
+}
+
+.info {
+    padding: 15px;
+}
+
+.info h3 {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.info p {
+    font-size: 13px;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.price-row {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin-bottom: 12px;
+}
+
+.price {
+    font-size: 18px;
+    font-weight: bold;
+    color: #077d3f;
+}
+
+.old-price {
+    font-size: 13px;
+    text-decoration: line-through;
+    color: gray;
+}
+
+.btn {
+    width: 100%;
+    padding: 10px;
+    background: #0066d8;
+    border: none;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.btn:hover {
+    background: #004fa8;
+}
+footer {
+    text-align: center;
+   font-size: 30px;
+    width: 100%;
+    bottom: 0;
+}
+</style>
+</head>
+
+<body>
+
+    <header>
+        <h1>ShopEasy</h1>
+    </header>
+
+    <div class="container">
+        <div class="card">
+            <img src="tshirt.png" alt="T-Shirt">
+
+            <div class="info">
+                <h3>Classic Cotton T-Shirt</h3>
+                <p>Soft, breathable cotton. Regular fit. Available in multiple colors.</p>
+
+                <div class="price-row">
+                    <span class="price">₹799</span>
+                    <span class="old-price">₹1,199</span>
+                </div>
+
+                <button class="btn">Add to Cart</button>
+            </div>
+        </div>
+    </div>
+    <footer>BY APOORVA</footer>
+    <footer>2025B01011073</footer>
+
+</body>
+</html>
+
+
+
+
+

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ShopEase</title>
+
+<style>
+    body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+    }
+
+    /* NAVBAR */
+    .navbar {
+        background-color: #111;
+        color: white;
+        padding: 1rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .logo {
+        font-size: 1.5rem;
+        font-weight: bold;
+    }
+
+    .nav-links {
+        display: none;
+        gap: 2rem;
+    }
+
+    .nav-links a {
+        color: white;
+        text-decoration: none;
+    }
+
+    .right-menu {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .right-menu a {
+        color: white;
+        text-decoration: none;
+    }
+
+    .hamburger {
+        font-size: 1.8rem;
+        cursor: pointer;
+        display: block;
+    }
+
+    #menu-toggle {
+        display: none;
+    }
+
+    .mobile-menu {
+        display: none;
+        background-color: #312f2f;
+        padding: 1rem;
+    }
+
+    .mobile-menu a {
+        display: block;
+        padding: 10px;
+        text-align: center;
+        text-decoration: none;
+        color: white;
+    }
+
+    #menu-toggle:checked ~ .mobile-menu {
+        display: block;
+    }
+
+    @media (min-width: 768px) {
+        .hamburger {
+            display: none;
+        }
+        .nav-links {
+            display: flex;
+        }
+        .mobile-menu {
+            display: none !important;
+        }
+    }
+    footer {
+        text-align: left;
+        margin: 5px 0;
+    }
+</style>
+</head>
+<body>
+
+<input type="checkbox" id="menu-toggle">
+
+<header class="navbar">
+    <div class="logo">ShopEase</div>
+
+    <nav class="nav-links">
+        <a href="#">Home</a>
+        <a href="#">Products</a>
+        <a href="#">Categories</a>
+        <a href="#">Deals</a>
+        <a href="#">Contact</a>
+    </nav>
+
+    <div class="right-menu">
+        <a href="#">Cart 🛒</a>
+        <a href="#">Login</a>
+
+        <label for="menu-toggle" class="hamburger">☰</label>
+    </div>
+</header>
+
+<div class="mobile-menu">
+    <a href="#">Home</a>
+    <a href="#">Products</a>
+    <a href="#">Categories</a>
+    <a href="#">Deals</a>
+    <a href="#">Contact</a>
+</div>
+<h2 style="line-height: 0;">Welcome to ShopEase!</h2>
+<p style="line-height: 15px;">Your one-stop destination for all shopping needs.</p>
+<footer>Apoorva</footer>
+<footer>2025B01011073</footer>
+<footer>CSE14</footer>
+</body>
+</html>
